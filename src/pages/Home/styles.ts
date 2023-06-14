@@ -51,6 +51,11 @@ const BaseInput = styled.input`
 
 export const TaskInput = styled(BaseInput)`
   flex: 1; // Atalho para setar 3 propriedades para aumentar diminuir de acordo com o container pai
+
+  &::-webkit-calendar-picker-indicator {
+    //retirar a seta para baixo do input
+    display: none !important;
+  }
 `
 
 export const MinutesAmountInput = styled(BaseInput)`
